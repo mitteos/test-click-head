@@ -4,6 +4,7 @@ interface ProductState {
   id: number;
   title: string;
   price: number;
+  images: string[];
 }
 
 interface ProductStore {

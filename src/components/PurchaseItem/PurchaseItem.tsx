@@ -68,7 +68,13 @@ export const PurchaseItem: React.FC<PurchaseItemProps> = ({
             onChange={handleChangeIsSelected}
           />
         )}
-        <Image src={ProductImage} alt="product" className={styles.image} />
+        <Image
+          src={product ? product?.images[0] : ProductImage}
+          alt="product"
+          className={styles.image}
+          width={260}
+          height={150}
+        />
         <div className={styles.info}>
           <p className={styles.title}>{product?.title}</p>
           {variant === "cart" && (

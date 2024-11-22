@@ -13,6 +13,7 @@ interface ProductState {
   id: number;
   title: string;
   price: number;
+  images: string[];
 }
 
 export const ProductList: React.FC = () => {
@@ -45,7 +46,7 @@ export const ProductList: React.FC = () => {
   return (
     <div className={styles.container}>
       {data?.map((product: ProductState) => (
-        <Card key={product.id} {...product} />
+        <Card key={product.id} info={product} />
       ))}
     </div>
   );
