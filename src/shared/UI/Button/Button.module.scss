@@ -1,0 +1,33 @@
+.container {
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.accent {
+  background-color: #0003be;
+  border: 1px solid #0003be;
+  &:hover {
+    background-color: #fff;
+    color: #0003be;
+  }
+}
+.remove {
+  background-color: #eb3333;
+  border: 1px solid #eb3333;
+  &:hover {
+    background-color: #fff;
+    color: #eb3333;
+  }
+}
+.goToCart {
+  background-color: none;
+  border: 1px solid #0003be;
+  color: #0003be;
+  &:hover {
+    border: 1px solid #00be09;
+    color: #00be09;
+  }
+}

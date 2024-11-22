@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.purchase {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+}

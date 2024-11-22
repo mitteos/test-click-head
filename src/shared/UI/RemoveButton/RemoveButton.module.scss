@@ -1,0 +1,12 @@
+.remove {
+  border: none;
+  cursor: pointer;
+  background: none;
+  width: 50px;
+  &:focus {
+    border: none;
+  }
+}
+.removeIcon {
+  width: 100%;
+}
